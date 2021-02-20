@@ -12,6 +12,23 @@ public class BankAccount {
         this.accountNum = accountNum;
         this.type = type;
     }
+
+    public void deposit(int amt){
+        if(amt > 0){
+            balance += amt;
+        }
+    }
+
+    public void withdraw (int amt){
+        if(amt <= balance){
+            balance -= amt;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Type: " + type + "\tAccount Number: " + accountNum+ "\tOwner: " + owner + "\tBalance: " + balance;
+    }
 }
 
 
