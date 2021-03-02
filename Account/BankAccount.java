@@ -27,7 +27,11 @@ public class BankAccount {
 
     @Override
     public String toString() {
-        return "Type: " + type + "\tAccount Number: " + accountNum+ "\tOwner: " + owner + "\tBalance: " + balance;
+        int dollar = balance / 100;
+        int cents = balance % 100;
+        String balanceF = "$" + dollar + "." + cents;
+        return "Type: " + type + "\tAccount Number: " + accountNum+ "\tOwner: " + owner + "\tBalance: " + balanceF;
+
     }
 }
 
