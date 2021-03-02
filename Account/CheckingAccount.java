@@ -1,4 +1,4 @@
-package atsignJar;
+package Account;
 
 public class CheckingAccount extends BankAccount {
 
